@@ -1,1 +1,196 @@
-test
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Tracker - Luxury Theme</title>
+
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<!-- 
+    <style>
+        body { font-family: 'Outfit', sans-serif; }
+    </style> -->
+</head>
+<body class="bg-base-300 min-h-screen"> 
+<section class="max-w-6xl mx-auto p-6">
+
+    <h1 class="text-3xl font-bold text-primary mb-6 "> 
+        </i>Job Application Tracker
+    </h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <div class="card bg-base-100 shadow-xl border border-primary/20 p-6">
+            <p class="text-base-content/60 text-sm">Total</p>
+            <h2 class="text-3xl font-extrabold text-base-content">8</h2>
+        </div>
+        <div class="card bg-base-100 shadow-xl border border-success/20 p-6">
+            <p class="text-base-content/60 text-sm">Interview</p>
+            <h2 class="text-3xl font-extrabold text-success">0</h2>
+        </div>
+        <div class="card bg-base-100 shadow-xl border border-error/20 p-6">
+            <p class="text-base-content/60 text-sm">Rejected</p>
+            <h2 class="text-3xl font-extrabold ">0</h2>
+        </div>
+    </div>
+
+    <div class="flex justify-between items-center mb-4">
+        <h2 class="font-semibold text-white text-lg">Available Jobs</h2>
+        <span class=" text-white">8 jobs </span>
+    </div>
+
+    <div class="flex gap-3 mb-6">
+        <button class="btn btn-primary btn-sm px-6">All</button>
+        <button class="btn btn-outline btn-sm px-6">Interview</button>
+        <button class="btn btn-outline btn-sm px-6">Rejected</button>
+    </div>
+
+    <div class="grid grid-cols-1  gap-6">
+
+        <div class="card bg-base-100 border border-base-content/10 p-6 hover:shadow-2xl transition-all border-l-4 border-l-primary">
+            <div class="flex justify-between items-start">
+                <div>
+                    <h3 class="text-secondary font-bold text-xl uppercase tracking-wider text-primary">SkyTech Solutions</h3>
+                    <p class="text-base-content/80 text-sm mt-1">Frontend Engineer</p>
+                    <p class="text-base-content/50 text-sm mt-3 italic text-xs">Dhaka • Full-time • ৳50,000 - ৳75,000</p>
+                </div>
+                <button class="btn btn-ghost btn-circle text-error hover:bg-error/20"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <div class="mt-4"><span class="badge badge-primary badge-outline font-bold">NOT APPLIED</span></div>
+            <p class="text-base-content/70 text-sm mt-4 line-clamp-2">Develop responsive web applications using React and Tailwind CSS.</p>
+            <div class="flex gap-3 mt-5">
+                <button class="btn btn-xs btn-success btn-outline">Interview</button>
+                <button class="btn btn-xs btn-error btn-outline">Rejected</button>
+            </div>
+        </div>
+
+        <div class="card bg-base-100 border border-base-content/10 p-6 hover:shadow-2xl transition-all border-l-4 border-l-primary">
+            <div class="flex justify-between items-start">
+                <div>
+                    <h3 class="text-secondary font-bold text-xl uppercase tracking-wider text-primary">NexaSoft Ltd</h3>
+                    <p class="text-base-content/80 text-sm mt-1">Backend Developer</p>
+                    <p class="text-base-content/50 text-sm mt-3 italic text-xs">Chattogram • Remote • ৳60k - ৳90k</p>
+                </div>
+                <button class="btn btn-ghost btn-circle text-error"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <div class="mt-4"><span class="badge badge-primary badge-outline font-bold">NOT APPLIED</span></div>
+            <p class="text-base-content/70 text-sm mt-4 line-clamp-2">Build secure REST APIs using Node.js and Express for enterprise apps.</p>
+            <div class="flex gap-3 mt-5">
+                <button class="btn btn-xs btn-success btn-outline">Interview</button>
+                <button class="btn btn-xs btn-error btn-outline">Rejected</button>
+            </div>
+        </div>
+
+        <div class="card bg-base-100 border border-base-content/10 p-6 hover:shadow-2xl transition-all border-l-4 border-l-primary">
+            <div class="flex justify-between items-start">
+                <div>
+                    <h3 class="text-secondary font-bold text-xl uppercase tracking-wider text-primary">PixelWave Studio</h3>
+                    <p class="text-base-content/80 text-sm mt-1">UI/UX Designer</p>
+                    <p class="text-base-content/50 text-sm mt-3 italic text-xs">Sylhet • Part-time • ৳30k - ৳45k</p>
+                </div>
+                <button class="btn btn-ghost btn-circle text-error"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <div class="mt-4"><span class="badge badge-primary badge-outline font-bold">NOT APPLIED</span></div>
+            <p class="text-base-content/70 text-sm mt-4 line-clamp-2">Create engaging user interfaces and design systems for global brands.</p>
+            <div class="flex gap-3 mt-5">
+                <button class="btn btn-xs btn-success btn-outline">Interview</button>
+                <button class="btn btn-xs btn-error btn-outline">Rejected</button>
+            </div>
+        </div>
+
+        <div class="card bg-base-100 border border-base-content/10 p-6 hover:shadow-2xl transition-all border-l-4 border-l-primary">
+            <div class="flex justify-between items-start">
+                <div>
+                    <h3 class="text-secondary font-bold text-xl uppercase tracking-wider text-primary">DataBridge</h3>
+                    <p class="text-base-content/80 text-sm mt-1">Data Scientist</p>
+                    <p class="text-base-content/50 text-sm mt-3 italic text-xs">Dhaka • Full-time • ৳80k - ৳120k</p>
+                </div>
+                <button class="btn btn-ghost btn-circle text-error"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <div class="mt-4"><span class="badge badge-primary badge-outline font-bold">NOT APPLIED</span></div>
+            <p class="text-base-content/70 text-sm mt-4 line-clamp-2">Analyze large datasets and build predictive models for finance.</p>
+            <div class="flex gap-3 mt-5">
+                <button class="btn btn-xs btn-success btn-outline">Interview</button>
+                <button class="btn btn-xs btn-error btn-outline">Rejected</button>
+            </div>
+        </div>
+
+        <div class="card bg-base-100 border border-base-content/10 p-6 hover:shadow-2xl transition-all border-l-4 border-l-primary">
+            <div class="flex justify-between items-start">
+                <div>
+                    <h3 class="text-secondary font-bold text-xl uppercase tracking-wider text-primary">CloudNest Ltd</h3>
+                    <p class="text-base-content/80 text-sm mt-1">DevOps Engineer</p>
+                    <p class="text-base-content/50 text-sm mt-3 italic text-xs">Remote • Contract • ৳90,000+</p>
+                </div>
+                <button class="btn btn-ghost btn-circle text-error"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <div class="mt-4"><span class="badge badge-primary badge-outline font-bold">NOT APPLIED</span></div>
+            <p class="text-base-content/70 text-sm mt-4 line-clamp-2">Manage cloud infrastructure and CI/CD pipelines on AWS.</p>
+            <div class="flex gap-3 mt-5">
+                <button class="btn btn-xs btn-success btn-outline">Interview</button>
+                <button class="btn btn-xs btn-error btn-outline">Rejected</button>
+            </div>
+        </div>
+
+        <div class="card bg-base-100 border border-base-content/10 p-6 hover:shadow-2xl transition-all border-l-4 border-l-primary">
+            <div class="flex justify-between items-start">
+                <div>
+                    <h3 class="text-secondary font-bold text-xl uppercase tracking-wider text-primary">Finova Tech</h3>
+                    <p class="text-base-content/80 text-sm mt-1">Flutter Developer</p>
+                    <p class="text-base-content/50 text-sm mt-3 italic text-xs">Dhaka • Full-time • ৳55k - ৳85k</p>
+                </div>
+                <button class="btn btn-ghost btn-circle text-error"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <div class="mt-4"><span class="badge badge-primary badge-outline font-bold">NOT APPLIED</span></div>
+            <p class="text-base-content/70 text-sm mt-4 line-clamp-2">Develop cross-platform mobile apps for banking sector.</p>
+            <div class="flex gap-3 mt-5">
+                <button class="btn btn-xs btn-success btn-outline">Interview</button>
+                <button class="btn btn-xs btn-error btn-outline">Rejected</button>
+            </div>
+        </div>
+
+        <div class="card bg-base-100 border border-base-content/10 p-6 hover:shadow-2xl transition-all border-l-4 border-l-primary">
+            <div class="flex justify-between items-start">
+                <div>
+                    <h3 class="text-secondary font-bold text-xl uppercase tracking-wider text-primary">CyberCore</h3>
+                    <p class="text-base-content/80 text-sm mt-1">Security Analyst</p>
+                    <p class="text-base-content/50 text-sm mt-3 italic text-xs">Chattogram • Full-time • ৳70k - ৳100k</p>
+                </div>
+                <button class="btn btn-ghost btn-circle text-error"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <div class="mt-4"><span class="badge badge-primary badge-outline font-bold">NOT APPLIED</span></div>
+            <p class="text-base-content/70 text-sm mt-4 line-clamp-2">Monitor systems and protect against emerging cyber threats.</p>
+            <div class="flex gap-3 mt-5">
+                <button class="btn btn-xs btn-success btn-outline">Interview</button>
+                <button class="btn btn-xs btn-error btn-outline">Rejected</button>
+            </div>
+        </div>
+
+        <div class="card bg-base-100 border border-base-content/10 p-6 hover:shadow-2xl transition-all border-l-4 border-l-primary">
+            <div class="flex justify-between items-start">
+                <div>
+                    <h3 class="text-secondary font-bold text-xl uppercase tracking-wider text-primary">InnovaX Labs</h3>
+                    <p class="text-base-content/80 text-sm mt-1">AI Engineer</p>
+                    <p class="text-base-content/50 text-sm mt-3 italic text-xs">Remote • Full-time • ৳100k - ৳150k</p>
+                </div>
+                <button class="btn btn-ghost btn-circle text-error"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <div class="mt-4"><span class="badge badge-primary badge-outline font-bold">NOT APPLIED</span></div>
+            <p class="text-base-content/70 text-sm mt-4 line-clamp-2">Develop advanced LLM models and machine learning pipelines.</p>
+            <div class="flex gap-3 mt-5">
+                <button class="btn btn-xs btn-success btn-outline">Interview</button>
+                <button class="btn btn-xs btn-error btn-outline">Rejected</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+</body>
+</html>
